@@ -9,7 +9,7 @@ def find_word():
         file = request.files['file']
         if file:
             filename=file.filename
-            # C:\Users\Danil\PycharmProjects\flask\upload\1.txt
+
             file_path=os.path.join(app.root_path,'upload',filename)
             file.save(file_path)
 
